@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+html {
+    background: #101010;
+}
+
+/*############## HEADER ############## */
+
+.head {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#car {
+    padding-right: 5px;
+}
+
+.brand {
+    color: black;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #f90029;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f90029;
+    transition: .4s;
+}
+.btn {
+    background-color: #f90029;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+.btn:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}   
+
+/*############## Section CATALOGO ############## */
+
+section .catalogo {
+    width: 100vw;
+    padding:  100px;
+}
+
+section .filtro {
+    width: 1200px;
+    height: 200px;
+    background-color: #191919;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f9004d;
+}
+
+.procura {
+    width:850px;
+    height: 60px;
+    border-radius: 10px 0px 0px 10px;
+    text-indent: 10px;
+    transition: .5s;
+    border: 2px solid #f90029;
+    background-color: white;
+    font-size: 15px;
+}
+
+.procura-btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: #f90029;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    border: 1px solid #f90029;
+    font-size: 15px;
+}
+
+
+.procura:hover {
+    background-color: black;
+    color: white;
+}
+
+.procura-btn:hover {
+    background-color: black;
+}
+
+.titulo-conteudo {
+    color: white;
+    padding-left: 240px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.titulo-conteudo h3 {
+    font-size: 38px;
+    color: #f90029;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+.card {
+    /* width: 40%; */
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+.product-image {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-1 {
+    background-image: url(/img/mustang-removebg-preview\ \(1\).png);
+}
+
+#img-2 {
+    background-image: url(/img/escalade-removebg-preview\ \(1\).png);
+}
+
+#img-3 {
+    background-image: url(/img/HURACANLP610-removebg-preview.png);
+}
+
+#img-4 {
+    background-image: url(/img/rollsroyce-removebg-preview.png);
+}
+
+#img-5 {
+    background-image: url(/img/novitec-ferrari-f8-tributo-n-largo-5-removebg-preview.png);
+}
+
+#img-6 {
+    background-image: url(/img/audiR8-removebg-preview.png);
+}
+
+#img-7 {
+    background-image: url(/img/urus-removebg-preview.png);
+}
+
+#img-8 {
+    background-image: url(/img/ram-removebg-preview.png);
+}
+
+.container h3{
+    margin-bottom: 10px;
+    color: white;
+    border-left: 4px solid #f90029;
+    padding-left: 10px;
+    font-size: 24px ;
+    width: 500px;
+}
+
+.container p {
+    color: white;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.card-btn {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #f90029;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    width: 500px;
+}
+
+.card-btn:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+.sobre {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/lambo_sobre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sobre-conteudo h4 {
+    color: white;
+    padding-left: 240px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sobre-conteudo p {
+    color: white;
+    padding-left: 240px;
+    padding-top: 30px;
+    width: 45%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.servicos {
+    background: #101010;
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.titulo-servicos h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card2 {
+    height: 400px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card2 i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f90029;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.texto-servicos p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 85px;
+}
+
+.card2 .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 28px;
+    transition: .5s;
+}
+
+.card2 .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.contato {
+    width: 100%;
+    height: 320px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contato p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    
+}
+
+.social {
+    display: flex;
+    padding-top: 20px;
+}
+
+.social a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 25%;
+    margin: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+.contato h4 {
+    color: white;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.contato .button2 {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.contato .button2:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background:#101010;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+}
+
+#location {
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 28px;
+    color: #f9004d;
+}
+
+.flags {
+    top: 55px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.flags:hover {
+    border-bottom: 2px solid #f9004d;
+}
+
+.fim {
+    position: absolute;
+    cursor: pointer;
+    font-size: 28px;
+    bottom: 35px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101010;
+}
+::-webkit-scrollbar-thumb {
+    background: #f90029;
+}
+

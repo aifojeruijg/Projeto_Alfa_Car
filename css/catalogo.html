@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+section .catalogo {
+    width: 100vw;
+    padding:  100px;
+}
+
+body {
+    background: #191919;
+}
+
+section .filtro {
+    width: 1200px;
+    height: 200px;
+    background-color: #191919;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f9004d;
+}
+
+.procura {
+    width:850px;
+    height: 60px;
+    border-radius: 10px 0px 0px 10px;
+    text-indent: 10px;
+    transition: .5s;
+    border: 2px solid #f90029;
+    background-color: white;
+    font-size: 15px;
+}
+
+.procura-btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: #f90029;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    border: 1px solid #f90029;
+    font-size: 15px;
+}
+
+
+.procura:hover {
+    background-color: black;
+    color: white;
+}
+
+.procura-btn:hover {
+    background-color: black;
+}
+
+.titulo-conteudo {
+    color: white;
+    padding-left: 240px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.titulo-conteudo h3 {
+    font-size: 38px;
+    color: #f90029;
+}
+
+.produtcs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 33%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+.product-image {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-1 {
+    background-image: url(/img/mustang-removebg-preview\ \(1\).png);
+}
+
+#img-2 {
+    background-image: url(/img/escalade-removebg-preview\ \(1\).png);
+}
+
+#img-3 {
+    background-image: url(/img/HURACANLP610-removebg-preview.png);
+}
+
+#img-4 {
+    background-image: url(/img/rollsroyce-removebg-preview.png);
+}
+
+#img-5 {
+    background-image: url(/img/novitec-ferrari-f8-tributo-n-largo-5-removebg-preview.png);
+}
+
+#img-6 {
+    background-image: url(/img/audiR8-removebg-preview.png);
+}
+
+#img-7 {
+    background-image: url(/img/urus-removebg-preview.png);
+}
+
+#img-8 {
+    background-image: url(/img/ram-removebg-preview.png);
+}
+
+html, body {
+    box-sizing: border-box;
+    min-height: 96vh;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    gap: 180px;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.products-container {
+    display: grid;
+}
+
+.products-container h3{
+    margin-bottom: 10px;
+    color: white;
+    border-left: 4px solid #f90029;
+    padding-left: 10px;
+    font-size: 24px ;
+    width: 500px;
+}
+
+.products-container p {
+    color: white;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.card-btn {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #f90029;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    width: 500px;
+}
+
+.card-btn:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+    </style>
+</head>
+<body>
+    
+    <section class="catalogo" id="catalogo">
+        <div class="conteudo">
+            <div class="titulo-conteudo">
+                <p>Encontre o que você deseja</p>
+                <h3>Catálogo</h3>
+            </div>
+            <div class="filtro">
+                <input type="text" class="procura" placeholder="Procure por um modelo">
+                <button class="procura-btn">Procure</button>
+            </div>
+        </div>
+    
+        <div class="products-container">
+            <div class="card">
+                <div class="product-image" id="img-1"></div>
+                <h3>Mustang Mach 1 2021</h3>
+                <p>Motor 5.0L V8 com 470cv. Transmissão automática de 10 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-4"></div>
+                <h3>Rolls Royce Ghost 2021</h3>
+                <p>Motor 6.7L V12 com 563cv. Transmissão automática de 8 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-3"></div>
+                <h3>Lamborghini Huracan LP 640-4 2021</h3>
+                <p>Motor 5.2L V10 com 640cv. Transmissão automática de 7 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-2"></div>
+                <h3>Cadillac Escalade Sport Platinum 2022</h3>
+                <p>Motor 6.2L V8 com 420cv. Transmissão automática de 10 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-5"></div>
+                <h3>Ferrari SF90 Stradale</h3>
+                <p>Motor 3.9L V8 com 780cv. Transmissão automática de 8 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-6"></div>
+                <h3>Audi R8 Spyder 2022</h3>
+                <p>Motor 5.2L V10 com 540cv. Transmissão automática de 7 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-7"></div>
+                <h3>Lamborghini Urus Pearl Capsule 2022</h3>
+                <p>Motor 4.0L V8 com 641cv. Transmissão automática de 8 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+            <div class="card">
+                <div class="product-image" id="img-8"></div>
+                <h3>RAM 1500 RTX 2022</h3>
+                <p>Motor 6.2L V8 com 702cv. Transmissão automática de 8 velocidades</p>
+                <a href="#" class="card-btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
